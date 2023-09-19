@@ -1,18 +1,63 @@
-:root {
-  /* colors */
---bgColor:#081b29;
---mainColor:#00abf0;
---textColor:#333;
---secTextColor:#555;
---white:#fff;
---coverColor:linear-gradient(45deg ,#00abf0, #006e9a);
---pageColor:linear-gradient(90deg ,#fff, #ddd);
---boderColor: .125rem solid #00abf0;
---boxShadow:0 0 .6rem rgba(0, 0, 0, .2);
+/* Thems  Start */
+body{
+  --bgColor:#081b29;
+  --mainColor:#00abf0;
+  --textColor:#333;
+  --secTextColor:#555;
+  --white:#fff;
+  --coverColor:linear-gradient(45deg ,#00abf0, #006e9a);
+  --pageColor:linear-gradient(90deg ,#fff, #ddd);
+  --boderColor: .125rem solid var(--mainColor);
+  --boxShadow:0 0 .6rem rgba(0, 0, 0, .2);
+}
+body.theme1 {
+  --bgColor: #222;
+  --mainColor: #FF5733;
+  --coverColor: linear-gradient(45deg, #FF5733, #D64124);
+}
+body.theme2 {
+  --bgColor: #333;
+  --mainColor: #55D6BE;
+  --coverColor: linear-gradient(45deg, #55D6BE, #389E8A);
+}
+body.theme3 {
+  --bgColor: #1A1A1A;
+  --mainColor: #FFA500;
+  --coverColor: linear-gradient(45deg, #FFA500, #FF6600);
+}
+body.theme4 {
+  --bgColor: #2E0854;
+  --mainColor: #FF00FF;
+  --coverColor: linear-gradient(45deg, #FF00FF, #9400D3);
+}
+body.theme5 {
+  --bgColor: #121212;
+  --mainColor: #E84D49;
+  --coverColor: linear-gradient(45deg, #E84D49, #FF7A75);
+}
+body.theme6 {
+  --bgColor: #262626;
+  --mainColor: #FFD700;
+  --boderColor: .125rem solid var(--mainColor);
+}
+body.theme7 {
+  --bgColor: #1C2331;
+  --mainColor: #FF6B6B;
+  --coverColor: linear-gradient(45deg, #FF6B6B, #FFC3A0);
+}
+body.theme8 {
+  --bgColor: #1D2671;
+  --mainColor: #FF5733;
+  --coverColor: linear-gradient(45deg, #FF5733, #FFB347);
+}
+body.theme9{
+  --bgColor: #3E2723;
+  --mainColor: #FF9800;
+  --borderColor:  .125rem solid #FF9800 !important;
+  --coverColor: linear-gradient(45deg, #FF9800, #FFB74D);
 }
 
-/* Thems */
-
+/* Thems  Start End */
 /* common css  */
 p,
 h1,

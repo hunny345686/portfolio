@@ -62,7 +62,9 @@ flex-direction: column;
 align-items: center;
 }
 .profile-page img{
-  max-width: 180px;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
   border-radius: 50%;
   border: .25rem solid var(--mainColor);
   margin-bottom: .8rem;
@@ -197,28 +199,37 @@ content: "";position: absolute;
   bottom: 1.2rem;
   left:50%;
   transform: translateX(-50%);
+  width: 24px;
+  height: 24px;
+  background: var(--mainColor);
+  border-radius: 50%;
+  color: var(--white);
+  display: grid;
+  place-items: center;
 }
 .next-prev-btn{
-  position: absolute;
-  bottom:.9rem;
-  right: 1.5rem;
-  width: 2rem;
-  height: 2rem;
-  cursor: pointer;
-  font-size: 2rem;
-  color: var(--secTextColor);
+position: absolute;
+bottom:.9rem;
+right: 1.5rem;
+width: 2rem;
+height: 2rem;
+cursor: pointer;
+font-size: 2rem;
+background: var(--mainColor);
+color: var(--white);
 display: inline-flex;
 justify-content: center;
 align-items: center;  
 transition: .3s;
+border-radius: .4rem;
 }
 .next-prev-btn:hover{
 color: var(--mainColor);
+background: var(--white);
 }
 .next-prev-btn.back{
   left: 1.5rem;
 }
-
 .services-box{
   display: flex;
   flex-wrap: wrap;
@@ -283,6 +294,7 @@ color: var(--mainColor);
   height: 5rem;
   border: var(--boderColor);
   transition: .3s ease;
+  cursor: pointer;
 }
 
 .skill-content .content span:hover{
