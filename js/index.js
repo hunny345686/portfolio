@@ -9,17 +9,22 @@
     pageLeft: document.querySelector(".book-page.page-left"),
     totalPages: 0,
     pageNo: 0,
+    themes: [
+      "theme1",
+      "theme2",
+      "theme3",
+      "theme4",
+      "theme5",
+      "theme6",
+      "theme7",
+      "theme8",
+      "theme9",
+    ],
     init: function () {
-      let arr = [
-        "theme1",
-        "theme1",
-        "theme1",
-        "theme1",
-        "theme1",
-        "theme1",
-        "theme1",
-        "theme1",
-      ];
+      // Theme change on load
+      let getRendomNo = Math.floor(Math.random() * this.themes.length)
+      document.getElementsByTagName("BODY")[0].classList.add(this.themes[getRendomNo]);
+
       this.totalPages = this.pages.length;
       this.pageTurnBtns.forEach((element, index) => {
         element.addEventListener("click", () => {
@@ -55,7 +60,6 @@
     },
 
     handlePageTurn: function (element, index) {
-      console.log(index);
       const pageTurnId = element.getAttribute("data-page");
       const pageTurn = document.getElementById(pageTurnId);
 
@@ -137,6 +141,11 @@
 //     this.pageNo = 0;
 //     this.init();
 //   }
+//   handleSetInterVal(time, callback) {
+//     setTimeout(() => {
+//       callback();
+//     }, time);
+//   }
 //   init() {
 //     this.pageTurnBtns.forEach((element, index) => {
 //       element.addEventListener("click", () => {
@@ -149,17 +158,10 @@
 //     this.backToProfile.addEventListener("click", () => {
 //       this.handleBackToProfile();
 //     });
-//     setTimeout(() => {
-//       this.handleCoverRightAnimation();
-//     }, 2100);
 
-//     setTimeout(() => {
-//       this.handleCoverRightZIndex();
-//     }, 2800);
-
-//     setTimeout(() => {
-//       this.handlePageLeftZIndex();
-//     }, 3200);
+//     this.handleSetInterVal(2100, this.handleCoverRightAnimation.bind(this))
+//     this.handleSetInterVal(2800, this.handleCoverRightZIndex.bind(this))
+//     this.handleSetInterVal(3200, this.handlePageLeftZIndex.bind(this))
 
 //     this.pages.forEach((_, index) => {
 //       setTimeout(() => {
@@ -169,7 +171,6 @@
 //   }
 
 //   handlePageTurn(element, index) {
-//     console.log(index);
 //     const pageTurnId = element.getAttribute("data-page");
 //     const pageTurn = document.getElementById(pageTurnId);
 
@@ -237,6 +238,8 @@
 // }
 // const bookPageTurner = new BookPageTurner();
 
+
+// +++++++++++++=========== Class Sec Implementation++++================
 // class BookPageTurner {
 //   constructor() {
 //     this.pageTurnBtns = document.querySelectorAll(".next-prev-btn");
@@ -345,6 +348,7 @@
 // const bookPageTurner = new BookPageTurner();
 // bookPageTurner.init();
 
+// +++++++++++++=========== Class third Implementation++++================
 // class BookPageTurner {
 //   constructor() {
 //     this.pageTurnBtns = document.querySelectorAll(".next-prev-btn");
