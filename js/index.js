@@ -22,8 +22,9 @@
     ],
     init: function () {
       // Theme change on load
-      let getRendomNo = Math.floor(Math.random() * this.themes.length)
-      document.getElementsByTagName("BODY")[0].classList.add(this.themes[getRendomNo]);
+
+      let getRendomNo = Math.floor(Math.random() * this.themes.length);
+      document.body.classList.add(this.themes[getRendomNo]);
 
       this.totalPages = this.pages.length;
       this.pageTurnBtns.forEach((element, index) => {
@@ -79,7 +80,10 @@
     handleContactMe: function () {
       this.pages.forEach((page, index) => {
         setTimeout(() => {
-          this.handlePageAnimation(index);
+          page.classList.add("turn");
+          setTimeout(() => {
+            page.style.zIndex = 20 + index;
+          }, 500);
         }, (index + 1) * 200 + 100);
       });
     },
@@ -237,7 +241,6 @@
 //   }
 // }
 // const bookPageTurner = new BookPageTurner();
-
 
 // +++++++++++++=========== Class Sec Implementation++++================
 // class BookPageTurner {
