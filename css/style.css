@@ -472,3 +472,20 @@
   transform: translateX(-50%) scale(1);
   top: -1.8rem;
 }
+
+/* After Added Code  */
+
+.own-project-btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.own-project-btn a{
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.own-project-btn a i{
+  font-size: 1rem;
+}
