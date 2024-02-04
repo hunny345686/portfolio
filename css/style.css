@@ -489,3 +489,169 @@
 .own-project-btn a i{
   font-size: 1rem;
 }
+
+
+@media (max-width: 768px) {
+  .wrapper{
+    padding: 0;
+    border: 4px solid var(--mainColor);
+    height: 44rem;
+  }
+ 
+  .profile-page{
+    align-items: unset;
+  }
+  .book .book-page{
+    padding: 8px;
+  }
+  .profile-page img{
+    width: 80px;
+    height: 80px;
+  }
+  .profile-page h1{
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 10px;
+  }
+  .profile-page h3{
+    font-size: 16px;
+  }
+  .social-media a{
+    width: 30px;
+    height: 30px;
+  }
+  .social-media{
+    display: flex;
+    align-items: center;
+  }
+  .profile-page p{
+    font-size: 14px;
+    padding-bottom: 8px;
+  }
+  .btn{
+    width: 100%;
+    height: 34px;
+    font-size: 12px;
+    margin: 0;
+  }
+  .btn-box .btn:nth-child(2){
+    margin-top: 12px;
+  }
+  /* Next page 2 */
+  .page-front{
+    padding: 8px;
+    margin: 0;
+  }
+  .workeduc-content{
+    padding: 4px 8px;
+    margin: 0;
+
+  }
+  .title{
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .workeduc-content::before{
+    width: 12px;
+    height: 12px;
+    left: -7px;
+  }
+  .workeduc-content .year{
+    font-size: 14px;
+  }
+  .workeduc-content h3{
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+  .workeduc-content ul{
+    font-size: 12px;
+    text-align: justify;
+  }
+  /* page 3  */
+  .page-back{
+    padding: 8px;
+  }
+  .workeduc-box p{
+    font-size: 12px;text-align: justify;
+  }
+  .services-content h3{
+    font-size: 14px;
+  }
+  .services-content{
+    padding: 4px;
+  }
+  .services-content p{
+    font-size: 12px;
+    margin: 0;
+  }
+  .services-content i{
+    font-size: 22px;
+  }
+  .own-project-btn {
+    flex-direction: column;
+    gap: 12px;
+}
+  .services-content .btn {
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+}
+.services-content a{
+  font-size: 12px;
+}
+.services-content p{
+  padding: 10px 0;
+}
+.services-box{
+  gap: 12px;
+}
+.skill-content h3{
+font-size: 16px;
+text-decoration: overline;
+}
+.skill-content .content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.skill-box{
+  gap:10px
+}
+.skill-content .content span{
+  width: 5rem;
+    height: 4rem;
+}
+.skill-content .content span i{
+  font-size: 32px;
+}
+.portfolio-box .img-box{
+  height: 7rem;
+}
+.portfolio-box .info-title h3{
+  font-size: 16px;
+}
+.portfolio-box .info-title {
+  align-items: unset;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 10px;
+}
+.tech-used{
+  word-break: break-all;
+  font-size: 15px;
+}
+.info-title p {
+  font-style: 15px;
+}
+.portfolio-box .btn{
+  margin: 0;
+}
+.btn-diff .btn:nth-child(2){
+  margin: 0;
+}
+.portfolio-box .btn-diff {
+  flex-direction: column;
+  gap: 12px;
+  padding-right: 8px;
+}
+}
