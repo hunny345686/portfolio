@@ -4,14 +4,13 @@
   position: relative;
   width: 66rem;
   height: 45rem;
-  padding: 2rem;
+  padding: 1.5rem;
   animation: show-animation 2s forwards;
   overflow: hidden;
   perspective: 250rem;
 }
 
 @keyframes show-animation {
-
   0%,
   30% {
     opacity: 0;
@@ -32,7 +31,7 @@
   height: 100%;
   background: var(--coverColor);
   box-shadow: var(--boxShadow);
-  border-radius: .6rem 0 0 .6rem;
+  border-radius: 0.6rem 0 0 0.6rem;
   transform-origin: right;
 }
 
@@ -42,7 +41,7 @@
 
 .cover.cover-right {
   z-index: 100;
-  transition: transform 1s cubic-bezier(.645, .045, .355, 1);
+  transition: transform 1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .cover-right.turn {
@@ -62,13 +61,13 @@
   width: 50%;
   height: 100%;
   background: var(--pageColor);
-  box-shadow: 0 0 .6rem rgba(0 0 0 .1);
+  box-shadow: 0 0 0.6rem rgba(0 0 0 0.1);
   display: flex;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .book-page.page-left {
-  box-shadow: 0.6rem 0 .6rem 0.6rem rgba(0 0 0 .1);
+  box-shadow: 0.6rem 0 0.6rem 0.6rem rgba(0 0 0 0.1);
 }
 
 .profile-page {
@@ -82,22 +81,22 @@
   height: 180px;
   object-fit: cover;
   border-radius: 50%;
-  border: .25rem solid var(--mainColor);
-  margin-bottom: .8rem;
+  border: 0.25rem solid var(--mainColor);
+  margin-bottom: 0.8rem;
 }
 
 .profile-page h1 {
-  font-size: 2.7rem;
+  font-size: 1.6rem;
   line-height: 1;
 }
 
 .profile-page h3 {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   color: var(--mainColor);
 }
 
 .social-media {
-  margin: .6rem 0 .8rem;
+  margin: 0.6rem 0 0.8rem;
 }
 
 .social-media a {
@@ -111,8 +110,8 @@
   border: var(--boderColor);
   color: var(--mainColor);
   font-size: 1.3rem;
-  margin: 0 .2rem;
-  transition: all .3s ease;
+  margin: 0 0.2rem;
+  transition: all 0.3s ease;
 }
 
 .social-media a:hover {
@@ -125,23 +124,21 @@
 }
 
 .btn-box {
-  margin-top: 1.2rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 9.5rem;
-  height: 3rem;
   background: var(--mainColor);
   border: var(--boderColor);
-  border-radius: .3rem;
-  font-size: 1rem;
+  border-radius: 0.3rem;
+  font-size: 14px;
   color: var(--white);
   font-weight: 500;
-  margin: 0 1rem;
-  transition: .3s linear;
+  transition: 0.3s linear;
+  padding: 8px 16px;
 }
 
 .btn:hover {
@@ -164,7 +161,7 @@
   right: 0;
   transform-style: preserve-3d;
   transform-origin: left;
-  transition: transform 1s cubic-bezier(.645, .045, .355, 1);
+  transition: transform 1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .book-page.page-right.turn {
@@ -179,7 +176,7 @@
   width: 100%;
   height: 100%;
   background: var(--pageColor);
-  padding: 1.5rem 2rem;
+  padding: 1.2rem;
 }
 
 .page-front {
@@ -193,6 +190,7 @@
 .title {
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 1.2rem;
 }
 
 .workeduc-box {
@@ -218,10 +216,23 @@
 
 .workeduc-content .year {
   color: var(--mainColor);
+  font-size: 14px;
+}
+.workeduc-content h3 {
+  font-size: 16px;
+}
+
+.workeduc-content li {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.workeduc-content p {
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .workeduc-content .year i {
-  margin-right: .4rem;
+  margin-right: 0.4rem;
 }
 
 .number-page {
@@ -240,7 +251,7 @@
 
 .next-prev-btn {
   position: absolute;
-  bottom: .9rem;
+  bottom: 0.9rem;
   right: 1.5rem;
   width: 2rem;
   height: 2rem;
@@ -251,8 +262,8 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  transition: .3s;
-  border-radius: .4rem;
+  transition: 0.3s;
+  border-radius: 0.4rem;
 }
 
 .next-prev-btn:hover {
@@ -273,10 +284,14 @@
 .services-content {
   flex: 1 1 10rem;
   border: var(--boderColor);
-  border-radius: .5rem;
-  text-align: center;
-  padding: .5rem .8rem 1.1rem;
-  transition: .3s ease;
+  border-radius: 0.5rem;
+  padding: 12px;
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
 }
 
 .services-content:hover {
@@ -285,20 +300,16 @@
 
 .services-content i {
   font-size: 2.5rem;
-  color: var(--mainColor)
+  color: var(--mainColor);
 }
 
 .services-content h3 {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .services-content p {
-  margin: .2rem 0 .8rem;
-}
-
-.services-content .btn {
-  width: 8rem;
-  height: 2.5rem;
+  text-align: justify;
+  font-size: 14px;
 }
 
 .skill-box {
@@ -312,15 +323,15 @@
 }
 
 .skill-content h3 {
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 1;
-  margin-bottom: .6rem;
+  margin-bottom: 0.6rem;
 }
 
 .skill-content .content {
   display: flex;
   flex-wrap: wrap;
-  gap: .8rem;
+  gap: 0.8rem;
 }
 
 .skill-content .content span {
@@ -328,12 +339,12 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   font-weight: 600;
   width: 6rem;
   height: 5rem;
   border: var(--boderColor);
-  transition: .3s ease;
+  transition: 0.3s ease;
   cursor: pointer;
 }
 
@@ -347,26 +358,27 @@
 }
 
 .portfolio-box .img-box {
-  display: flex;
-  width: 100%;
-  height: 15rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: var(--boderColor);
   overflow: hidden;
 }
 
 .portfolio-box .img-box img {
-  width: 100%;
   object-fit: cover;
-  transition: .3s ease;
-}
-
-.portfolio-box .img-box img:hover {
+  height: 80px;
+  width: 100%;
+  transition: 0.3s ease;
   transform: scale(1.1);
 }
 
+.portfolio-box .img-box img:hover {
+  transform: scale(1.2);
+}
+
 .portfolio-box .info-box {
-  margin: 1rem 0 1.5rem;
+  padding: 12px;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .portfolio-box .info-title {
@@ -377,22 +389,43 @@
 }
 
 .portfolio-box .info-title h3 {
-  font-size: 1.3rem;
+  font-size: 14px;
 }
 
 .portfolio-box .info-title a {
   display: flex;
   align-items: center;
   color: var(--mainColor);
+  font-size: 14px;
+}
+
+.portfolio-box {
+  width: 230px;
+  height: auto;
+  -webkit-box-shadow: 2px 2px 10px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 10px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 10px -3px rgba(0, 0, 0, 0.75);
 }
 
 .portfolio-box .info-title a i {
-  margin-left: .3rem;
+  margin-left: 0.3rem;
 }
 
 .tech-used {
-  font-weight: 600;
-  margin-bottom: .5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  word-break: break-word;
+}
+
+.info-box p {
+  font-size: 14px;
+  display: -webkit-box;
+  max-width: 100%;
+  margin: 0 auto;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .portfolio-box .btn-box {
@@ -412,8 +445,8 @@
   width: 100%;
   background: transparent;
   border: var(--boderColor);
-  border-radius: .3rem;
-  padding: .8rem;
+  border-radius: 0.3rem;
+  padding: 0.8rem;
   font-size: 1rem;
   color: var(--textColor);
   margin-bottom: 1.5rem;
@@ -421,7 +454,7 @@
 
 .contact-box .field::placeholder {
   color: var(--textColor);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .contact-box textarea {
@@ -441,18 +474,17 @@
   height: 2rem;
   background: transparent;
   border: var(--boderColor);
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   color: var(--mainColor);
   display: inline-flex;
   justify-content: center;
   align-items: center;
   font-size: 1.1rem;
-  transition: .3s ease
+  transition: 0.3s ease;
 }
 
 .back-profile:hover {
   background: var(--mainColor);
-  ;
   color: var(--white);
 }
 
@@ -460,11 +492,11 @@
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-50%) scale(.5);
+  transform: translateX(-50%) scale(0.5);
   font-size: 1rem;
   color: var(--mainColor);
   opacity: 0;
-  transition: .3s ease
+  transition: 0.3s ease;
 }
 
 .back-profile:hover p {
@@ -475,183 +507,195 @@
 
 /* After Added Code  */
 
-.own-project-btn{
+.own-project-btn {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  gap: 20px;
 }
 
-.own-project-btn a{
+.own-project-btn a {
   display: flex;
   align-items: center;
   gap: 0.2rem;
 }
-.own-project-btn a i{
+.own-project-btn a i {
   font-size: 1rem;
 }
+.hackerrank {
+  width: 24px;
+  height: 24px;
+}
 
-
+.projects {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
 @media (max-width: 768px) {
-  .wrapper{
+  .wrapper {
     padding: 0;
     border: 4px solid var(--mainColor);
     height: 44rem;
   }
- 
-  .profile-page{
+
+  .profile-page {
     align-items: unset;
   }
-  .book .book-page{
+  .book .book-page {
     padding: 8px;
   }
-  .profile-page img{
+  .profile-page img {
     width: 80px;
     height: 80px;
   }
-  .profile-page h1{
-    font-size: 18px;
+  .profile-page h1 {
+    font-size: 16px;
     font-weight: 500;
     padding-bottom: 10px;
   }
-  .profile-page h3{
-    font-size: 16px;
+  .profile-page h3 {
+    font-size: 14px;
   }
-  .social-media a{
+  .social-media a {
     width: 30px;
     height: 30px;
   }
-  .social-media{
+  .social-media {
     display: flex;
     align-items: center;
   }
-  .profile-page p{
-    font-size: 14px;
+  .profile-page p {
+    font-size: 12px;
     padding-bottom: 8px;
   }
-  .btn{
+  .btn-box {
+    flex-direction: column;
+  }
+  .btn {
     width: 100%;
-    height: 34px;
     font-size: 12px;
     margin: 0;
   }
-  .btn-box .btn:nth-child(2){
+  .btn-box .btn:nth-child(2) {
     margin-top: 12px;
   }
   /* Next page 2 */
-  .page-front{
+  .page-front {
     padding: 8px;
     margin: 0;
   }
-  .workeduc-content{
+  .workeduc-content {
     padding: 4px 8px;
     margin: 0;
-
   }
-  .title{
+  .title {
     font-size: 18px;
     margin-bottom: 5px;
   }
-  .workeduc-content::before{
+  .workeduc-content::before {
     width: 12px;
     height: 12px;
     left: -7px;
   }
-  .workeduc-content .year{
-    font-size: 14px;
+  .workeduc-content .year {
+    font-size: 12px;
   }
-  .workeduc-content h3{
+  .workeduc-content h3 {
     font-size: 14px;
     padding-bottom: 10px;
   }
-  .workeduc-content ul{
+  .workeduc-content ul {
     font-size: 12px;
     text-align: justify;
   }
   /* page 3  */
-  .page-back{
+  .page-back {
     padding: 8px;
   }
-  .workeduc-box p{
-    font-size: 12px;text-align: justify;
+  .workeduc-box p {
+    font-size: 12px;
+    text-align: justify;
   }
-  .services-content h3{
+  .services-content h3 {
     font-size: 14px;
   }
-  .services-content{
+  .services-content {
     padding: 4px;
   }
-  .services-content p{
+  .services-content p {
     font-size: 12px;
     margin: 0;
   }
-  .services-content i{
+  .services-content i {
     font-size: 22px;
   }
   .own-project-btn {
     flex-direction: column;
     gap: 12px;
-}
+  }
   .services-content .btn {
     width: 100%;
     height: 30px;
     font-size: 12px;
-}
-.services-content a{
-  font-size: 12px;
-}
-.services-content p{
-  padding: 10px 0;
-}
-.services-box{
-  gap: 12px;
-}
-.skill-content h3{
-font-size: 16px;
-text-decoration: overline;
-}
-.skill-content .content{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-}
-.skill-box{
-  gap:10px
-}
-.skill-content .content span{
-  width: 5rem;
+  }
+  .services-content a {
+    font-size: 12px;
+  }
+  .services-content p {
+    padding: 10px 0;
+  }
+  .services-box {
+    gap: 12px;
+  }
+  .skill-content h3 {
+    font-size: 16px;
+    text-decoration: overline;
+  }
+  .skill-content .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .skill-box {
+    gap: 10px;
+  }
+  .skill-content .content span {
+    width: 5rem;
     height: 4rem;
-}
-.skill-content .content span i{
-  font-size: 32px;
-}
-.portfolio-box .img-box{
-  height: 7rem;
-}
-.portfolio-box .info-title h3{
-  font-size: 16px;
-}
-.portfolio-box .info-title {
-  align-items: unset;
-  flex-direction: column;
-  gap: 7px;
-  margin-bottom: 10px;
-}
-.tech-used{
-  word-break: break-all;
-  font-size: 15px;
-}
-.info-title p {
-  font-style: 15px;
-}
-.portfolio-box .btn{
-  margin: 0;
-}
-.btn-diff .btn:nth-child(2){
-  margin: 0;
-}
-.portfolio-box .btn-diff {
-  flex-direction: column;
-  gap: 12px;
-  padding-right: 8px;
-}
+  }
+  .skill-content .content span i {
+    font-size: 32px;
+  }
+  .portfolio-box .img-box {
+    height: 7rem;
+  }
+  .portfolio-box .info-title h3 {
+    font-size: 16px;
+  }
+  .portfolio-box .info-title {
+    align-items: unset;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 10px;
+  }
+  .tech-used {
+    word-break: break-all;
+    font-size: 15px;
+  }
+  .info-title p {
+    font-style: 15px;
+  }
+  .portfolio-box .btn {
+    margin: 0;
+  }
+  .btn-diff .btn:nth-child(2) {
+    margin: 0;
+  }
+  .portfolio-box .btn-diff {
+    flex-direction: column;
+    gap: 12px;
+    padding-right: 8px;
+  }
 }
