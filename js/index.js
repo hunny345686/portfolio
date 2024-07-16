@@ -22,7 +22,6 @@
     ],
     init: function () {
       // Theme change on load
-
       let getRendomNo = Math.floor(Math.random() * this.themes.length);
       document.body.classList.add(this.themes[getRendomNo]);
 
