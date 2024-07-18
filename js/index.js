@@ -1,3 +1,39 @@
+(function () {
+  emailjs.init({
+    publicKey: "ps8N4-gPvEXMMpJ_x",
+  });
+})();
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // Collect form data
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("msg").value;
+    let sentMsg = document.getElementById("sentMsg");
+
+    // Define email parameters
+    let templateParams = {
+      from_name: name,
+      from_email: email,
+      message: message,
+    };
+
+    emailjs.send("service_dkltluc", "template_2v0xtv8", templateParams).then(
+      (response) => {
+        sentMsg.style.display = "block";
+        sentMsg.innerText = "Thank You For Your Message !";
+        document.getElementById("contact-form").reset();
+        console.log("SUCCESS!", response.status, response.text);
+      },
+      (error) => {
+        console.log("FAILED...", error);
+      }
+    );
+  });
+
 // ++++++++=========In IIFI type of Implementatio  ++++++=========
 (function () {
   const bookPageTurner = {

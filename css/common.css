@@ -109,3 +109,14 @@ ul li::marker {
   left: 7px;
   z-index: -1;
 }
+p#sentMsg {
+  position: fixed;
+  top: 0;
+  background: var(--mainColor);
+  color: #fff;
+  left: 0;
+  right: 0;
+  font-weight: 600;
+  padding: 12px;
+  display: none;
+}
