@@ -364,7 +364,7 @@
 
 .portfolio-box .img-box img {
   object-fit: cover;
-  height: 80px;
+  height: 150px;
   width: 100%;
   transition: 0.3s ease;
 }
@@ -398,6 +398,7 @@
 }
 
 .portfolio-box {
+  margin-bottom: 24px;
   height: auto;
   -webkit-box-shadow: 2px 2px 10px -3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 2px 10px -3px rgba(0, 0, 0, 0.75);
@@ -416,13 +417,6 @@
 
 .info-box p {
   font-size: 14px;
-  display: -webkit-box;
-  max-width: 100%;
-  margin: 0 auto;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
   margin-bottom: 12px;
 }
 
@@ -526,10 +520,6 @@
 }
 
 .projects {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
   overflow-y: auto;
   height: 85%;
   scrollbar-width: thin;

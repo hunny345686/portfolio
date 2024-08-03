@@ -87,8 +87,8 @@ body {
 }
 
 .experience {
-  overflow-y: auto;
-  height: 90%;
+  overflow-y: scroll;
+  height: 85%;
   scrollbar-width: thin;
 }
 
